@@ -5,6 +5,7 @@ import Projects from './Projects'
 import Footer from './Footer'
 
 const Index = () => {
+
   return (
     <div className="bg-neutral-900 min-h-screen px-4 md:px-8 lg:px-16">
       {/* Header */}
