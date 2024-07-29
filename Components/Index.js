@@ -56,6 +56,7 @@ const Index = () => {
               <Image src="/icons8-github.svg" alt="GitHub" width={15} height={15} />
               <span className="ml-1 text-sm">github</span>
             </a>
+            I love to explore the world of 3D most times for creativity and fun.
             . Currently working on Backend and Cloud Engineering.
             Trying out Networking engineering.{' '}
             <span className="text-green-600 bg-green-600/10 rounded-md border
