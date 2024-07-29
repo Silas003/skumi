@@ -58,7 +58,7 @@ const Index = () => {
             </a>
             I love to explore the world of 3D most times for creativity and fun
             . Currently working on Backend and Cloud Engineering.
-            Trying out Networking engineering.{' '}
+            Trying out Network engineering.{' '}
             <span className="text-green-600 bg-green-600/10 rounded-md border
              border-green-500/15 inline-block mt-2 text-sm">Watch this space for more update...</span>
           </p>

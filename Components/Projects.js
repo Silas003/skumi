@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div className="mt-8">
      <div className="flex flow-row flex-1">
-      <span className="text-green-600 text-2xl">•</span>
+      <span className="text-green-600 text-4xl text-center">•</span>
       <span className="text-xl text-white/90 font-bold">Projects</span>
 
      </div>
