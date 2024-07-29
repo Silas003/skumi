@@ -6,8 +6,8 @@ import Image from 'next/image'
 const Projects = () => {
   return (
     <div className="mt-8">
-     <div className="flex flow-row flex-1">
-      <span className="text-green-600 text-4xl text-center">•</span>
+     <div className="flex flow-row items-center">
+      <span className="text-green-600 text-3xl text-center mb-1">•</span>
       <span className="text-xl text-white/90 font-bold">Projects</span>
 
      </div>
