@@ -6,8 +6,8 @@ import Image from 'next/image'
 const Projects = () => {
   return (
     <div className="mt-8">
-     <div className="flex">
-     <Image src="/icons8-github.svg" alt="Resume" width={17} height={17} />
+     <div className="flex flow-row flex-1">
+      <span className="text-green-600 text-2xl">•</span>
       <span className="text-xl text-white/90 font-bold">Projects</span>
 
      </div>
