@@ -38,7 +38,7 @@ const Index = () => {
         {/* Greeting */}
         <section className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-neutral-200">!Halo, Mundo</h1>
-          <p className="text-neutral-400 font-semibold text-sm mt-2">Either you run the day or the day runs you.</p>
+          <p className="text-neutral-400/70 font-semibold text-sm mt-2">Either you run the day or the day runs you.</p>
         </section>
 
         {/* About */}
