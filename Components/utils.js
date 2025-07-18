@@ -1,6 +1,15 @@
 export const projects=[
     {
         id: 1,
+        title: 'MailTasker',
+        description: 'MailTasker is a distributed task system for handling and delivering emails at scale, implemented in Golang. It features worker pools, retry logic, and robust queue management for high reliability and throughput.',
+        image: '/images/project1.jpg',
+        url: 'https://github.com/Silas003/dtq',
+        link: 'mailtasker.com'
+    },
+    
+    {
+        id: 1,
         title: 'AuthPlate',
         description: 'Authplate is a boilerplate for anyone who wants to build or start their backend in python specifically DRF.It includes everything you need to get started with DRF and JWT, including authentication, authorization, and user management.Together with a messaging queue setup already for use',
         image: '/images/authplate.png',
@@ -32,6 +41,7 @@ export const projects=[
         url: 'https://example.com/project1',
         link: 'source code'
     },
+    
 
 ]
 
