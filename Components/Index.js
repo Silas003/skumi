@@ -16,15 +16,21 @@ const Index = () => {
           <Image src="/2.svg" alt="Logo" width={32} height={32} className="drop-shadow-lg" />
           <h1 className="ml-2 text-4xl md:text-5xl font-extrabold text-white tracking-tight drop-shadow-lg">Nck•03</h1>
         </div>
+
+              {/* Main Greeting */}
+      <section className="w-full flex flex-col items-center mt-2 mb-8 animate-fade-in-up">
+        <h2 className="text-4xl md:text-5xl font-bold text-neutral-200 dark:text-white drop-shadow-lg text-base sm:text-lg">!Halo, Mundo</h2>
+      </section>
+      
         <p className="text-neutral-300 text-lg md:text-xl font-medium max-w-xl mx-auto mt-2 animate-fade-in">
           Either you run the day or the day runs you.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 animate-fade-in-up w-full max-w-md mx-auto">
+        <div className="flex flex-row justify-center gap-4 mt-6 animate-fade-in-up w-full max-w-md mx-auto">
           {/* Resume Button */}
           <a
             href="https://drive.google.com/file/d/1-QoREEMwpg4-XBfZSb8GhkGmeRep4GYi/view?usp=sharing"
             target="_blank"
-            className="group relative inline-flex items-center justify-center w-full sm:w-auto px-5 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-green-400/30 shadow-lg hover:bg-green-400/20 hover:border-green-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+            className="group relative inline-flex items-center justify-center px-4 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-green-400/30 shadow-lg hover:bg-green-400/20 hover:border-green-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 min-w-0"
             aria-label="Resume"
           >
             {/* Resume SVG */}
@@ -37,7 +43,7 @@ const Index = () => {
           <a
             href="mailto:silaskumi4@gmail.com"
             target="_blank"
-            className="group relative inline-flex items-center justify-center w-full sm:w-auto px-5 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-blue-400/30 shadow-lg hover:bg-blue-400/20 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="group relative inline-flex items-center justify-center px-4 py-3 rounded-xl bg-white/10 backdrop-blur-md border border-blue-400/30 shadow-lg hover:bg-blue-400/20 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 min-w-0"
             aria-label="Email"
           >
             {/* Email SVG */}
@@ -49,10 +55,7 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Main Greeting */}
-      <section className="w-full flex flex-col items-center mt-2 mb-8 animate-fade-in-up">
-        <h2 className="text-4xl md:text-5xl font-bold text-neutral-200 dark:text-white drop-shadow-lg text-base sm:text-lg">!Halo, Mundo</h2>
-      </section>
+
 
       {/* About Section */}
       <section className="max-w-2xl mx-auto px-4 md:px-0 text-neutral-200/90 font-sans font-medium text-center mb-12 animate-fade-in-up text-base sm:text-lg break-words">
