@@ -45,7 +45,7 @@ const Index = () => {
 
         {/* Name */}
         <h1
-          className="animate-fade-in-up text-5xl md:text-7xl font-extrabold text-neutral-900 tracking-tight leading-tight mb-4 dark:text-white"
+          className="animate-fade-in-up text-4xl sm:text-5xl md:text-7xl font-extrabold text-neutral-900 tracking-tight leading-tight mb-4 dark:text-white"
           style={{ animationDelay: '150ms' }}
         >
           Hi, I&apos;m{' '}
@@ -73,20 +73,20 @@ const Index = () => {
 
         {/* CTAs */}
         <div
-          className="animate-fade-in-up flex flex-row gap-3"
+          className="animate-fade-in-up flex flex-col sm:flex-row gap-3 w-full max-w-xs sm:w-auto sm:max-w-none"
           style={{ animationDelay: '600ms' }}
         >
           <a
             href="https://drive.google.com/file/d/1-QoREEMwpg4-XBfZSb8GhkGmeRep4GYi/view?usp=sharing"
             target="_blank"
-            className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 shadow-md shadow-green-600/20 dark:bg-green-400 dark:hover:bg-green-300 dark:text-black dark:shadow-green-400/15"
+            className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 shadow-md shadow-green-600/20 dark:bg-green-400 dark:hover:bg-green-300 dark:text-black dark:shadow-green-400/15"
           >
             <ResumeIcon />
             Resume
           </a>
           <a
             href="mailto:silaskumi4@gmail.com"
-            className="inline-flex items-center gap-2 bg-white hover:bg-neutral-50 border border-neutral-300 hover:border-neutral-400 text-neutral-900 font-bold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-800 dark:hover:border-neutral-700 dark:text-white"
+            className="inline-flex items-center justify-center gap-2 bg-white hover:bg-neutral-50 border border-neutral-300 hover:border-neutral-400 text-neutral-900 font-bold text-sm px-5 py-2.5 rounded-xl transition-all duration-200 dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-800 dark:hover:border-neutral-700 dark:text-white"
           >
             <MailIcon />
             Email me
@@ -94,13 +94,13 @@ const Index = () => {
         </div>
 
         {/* Scroll cue */}
-        <div
-          className="animate-fade-in absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-neutral-400 dark:text-neutral-700"
-          style={{ animationDelay: '1200ms' }}
-        >
-          <span className="text-xs tracking-widest uppercase">scroll</span>
-          <ChevronDown />
-        </div>
+        {/*<div*/}
+        {/*  className="animate-fade-in absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-neutral-400 dark:text-neutral-700"*/}
+        {/*  style={{ animationDelay: '1200ms' }}*/}
+        {/*>*/}
+        {/*  <span className="text-xs tracking-widest uppercase">scroll</span>*/}
+        {/*  <ChevronDown />*/}
+        {/*</div>*/}
       </header>
 
       {/* ── ABOUT ── */}

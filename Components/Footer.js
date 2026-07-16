@@ -11,7 +11,7 @@ const Footer = () => {
           <span className="font-bold text-neutral-900 text-sm tracking-tight dark:text-white">Nck•03</span>
         </div>
         <p className="text-neutral-500 text-xs text-center dark:text-neutral-600">
-          © {year} Silas Kumi. Built with Next.js &amp; Tailwind CSS.
+          © {year} Silas Kumi. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <a

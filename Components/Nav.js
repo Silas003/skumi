@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Image from 'next/image'
 import { useTheme } from '../hooks/useTheme'
 
@@ -13,19 +14,37 @@ const MoonIcon = () => (
   </svg>
 )
 
+const MenuIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+)
+
+const CloseIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+  </svg>
+)
+
 const Nav = () => {
   const { theme, toggle } = useTheme()
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-neutral-200/60 bg-white/90 backdrop-blur-md dark:border-neutral-800/60 dark:bg-[#0a0a0a]/80">
       <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
+        {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <Image src="/2.svg" alt="Logo" width={22} height={22} />
           <span className="font-bold text-neutral-900 text-sm tracking-tight group-hover:text-green-600 transition-colors duration-200 dark:text-white dark:group-hover:text-green-400">
             Nck•03
           </span>
         </a>
-        <div className="flex items-center gap-1">
+
+        {/* Desktop links */}
+        <div className="hidden sm:flex items-center gap-1">
           <a
             href="#about"
             className="text-neutral-600 hover:text-neutral-900 text-sm font-medium px-3 py-1.5 rounded-lg hover:bg-neutral-100 transition-all duration-200 dark:text-neutral-400 dark:hover:text-white dark:hover:bg-white/5"
@@ -40,7 +59,7 @@ const Nav = () => {
           </a>
           <a
             href="mailto:silaskumi4@gmail.com"
-            className="ml-2 inline-flex items-center gap-1.5 bg-green-50 border border-green-200 text-green-700 hover:bg-green-100 hover:border-green-300 text-sm font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 dark:bg-green-400/10 dark:border-green-400/20 dark:text-green-400 dark:hover:bg-green-400/15 dark:hover:border-green-400/40"
+            className="ml-2 inline-flex items-center bg-green-50 border border-green-200 text-green-700 hover:bg-green-100 hover:border-green-300 text-sm font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 dark:bg-green-400/10 dark:border-green-400/20 dark:text-green-400 dark:hover:bg-green-400/15 dark:hover:border-green-400/40"
           >
             Contact
           </a>
@@ -53,7 +72,55 @@ const Nav = () => {
             {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
           </button>
         </div>
+
+        {/* Mobile: theme toggle + hamburger */}
+        <div className="flex sm:hidden items-center gap-1">
+          <button
+            onClick={toggle}
+            aria-label="Toggle theme"
+            suppressHydrationWarning
+            className="p-2 rounded-lg text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100 transition-all duration-200 dark:text-neutral-400 dark:hover:text-white dark:hover:bg-white/5"
+          >
+            {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+          </button>
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+            className="p-2 rounded-lg text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100 transition-all duration-200 dark:text-neutral-400 dark:hover:text-white dark:hover:bg-white/5"
+          >
+            {menuOpen ? <CloseIcon /> : <MenuIcon />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile dropdown */}
+      {menuOpen && (
+        <div className="sm:hidden border-t border-neutral-200/60 bg-white/95 backdrop-blur-md dark:border-neutral-800/60 dark:bg-[#0a0a0a]/95">
+          <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-1">
+            <a
+              href="#about"
+              onClick={closeMenu}
+              className="text-neutral-700 hover:text-neutral-900 text-sm font-medium px-3 py-2.5 rounded-lg hover:bg-neutral-100 transition-all duration-200 dark:text-neutral-300 dark:hover:text-white dark:hover:bg-white/5"
+            >
+              About
+            </a>
+            <a
+              href="#projects"
+              onClick={closeMenu}
+              className="text-neutral-700 hover:text-neutral-900 text-sm font-medium px-3 py-2.5 rounded-lg hover:bg-neutral-100 transition-all duration-200 dark:text-neutral-300 dark:hover:text-white dark:hover:bg-white/5"
+            >
+              Projects
+            </a>
+            <a
+              href="mailto:silaskumi4@gmail.com"
+              onClick={closeMenu}
+              className="inline-flex items-center text-sm font-semibold px-3 py-2.5 rounded-lg text-green-700 hover:bg-green-50 transition-all duration-200 dark:text-green-400 dark:hover:bg-green-400/10"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
