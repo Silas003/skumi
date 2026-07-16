@@ -17,11 +17,6 @@ const MailIcon = () => (
   </svg>
 )
 
-const ChevronDown = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 animate-bounce">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-  </svg>
-)
 
 const Index = () => {
   return (
@@ -93,18 +88,10 @@ const Index = () => {
           </a>
         </div>
 
-        {/* Scroll cue */}
-        {/*<div*/}
-        {/*  className="animate-fade-in absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-neutral-400 dark:text-neutral-700"*/}
-        {/*  style={{ animationDelay: '1200ms' }}*/}
-        {/*>*/}
-        {/*  <span className="text-xs tracking-widest uppercase">scroll</span>*/}
-        {/*  <ChevronDown />*/}
-        {/*</div>*/}
       </header>
 
       {/* ── ABOUT ── */}
-      <section id="about" className="max-w-5xl mx-auto px-4 mb-16 w-full">
+      <section id="about" className="max-w-5xl mx-auto px-4 mb-12 md:mb-16 w-full">
         <div className="flex items-center mb-6">
           <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 animate-pulse dark:bg-green-400" />
           <h2 className="text-xl md:text-2xl font-extrabold text-neutral-900 tracking-tight dark:text-white">About</h2>
@@ -130,7 +117,7 @@ const Index = () => {
       {/*<Certifications />*/}
 
       {/* ── SOCIALS ── */}
-      <section className="max-w-5xl mx-auto px-4 mb-16 w-full">
+      <section className="max-w-5xl mx-auto px-4 mb-12 md:mb-16 w-full">
         <div className="flex items-center mb-6">
           <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 animate-pulse dark:bg-green-400" />
           <h2 className="text-xl md:text-2xl font-extrabold text-neutral-900 tracking-tight dark:text-white">Find me on</h2>

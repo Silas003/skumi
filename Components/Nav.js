@@ -93,9 +93,9 @@ const Nav = () => {
         </div>
       </div>
 
-      {/* Mobile dropdown */}
+      {/* Mobile dropdown — absolutely positioned so it overlays content, not pushes it */}
       {menuOpen && (
-        <div className="sm:hidden border-t border-neutral-200/60 bg-white/95 backdrop-blur-md dark:border-neutral-800/60 dark:bg-[#0a0a0a]/95">
+        <div className="sm:hidden absolute top-full left-0 right-0 border-t border-neutral-200/60 bg-white/95 backdrop-blur-md shadow-lg dark:border-neutral-800/60 dark:bg-[#0a0a0a]/95">
           <div className="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-1">
             <a
               href="#about"

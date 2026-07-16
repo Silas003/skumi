@@ -17,7 +17,7 @@ const ArrowUpRight = () => (
 
 const Projects = () => {
   return (
-    <section id="projects" className="mb-20">
+    <section id="projects" className="mb-14 md:mb-20">
       <div className="flex items-center mb-8">
         <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 animate-pulse dark:bg-green-400" />
         <h2 className="text-xl md:text-2xl font-extrabold text-neutral-900 tracking-tight dark:text-white">Projects</h2>
