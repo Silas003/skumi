@@ -1,47 +1,51 @@
-export const projects=[
-    {
-        id: 1,
-        title: 'MailTasker',
-        description: 'MailTasker is a distributed task system for handling and delivering emails at scale, implemented in Golang. It features worker pools, retry logic, and robust queue management for high reliability and throughput.',
-        image: '/images/project1.jpg',
-        url: 'https://github.com/Silas003/dtq',
-        link: 'mailtasker.com'
-    },
-    
-    {
-        id: 1,
-        title: 'AuthPlate',
-        description: 'Authplate is a boilerplate for anyone who wants to build or start their backend in python specifically DRF.It includes everything you need to get started with DRF and JWT, including authentication, authorization, and user management.Together with a messaging queue setup already for use',
-        image: '/images/authplate.png',
-        url: 'https://github.com/kumikin/authplate',
-        image: '/images/project1.jpg',
-        link: 'authplate.com'
-    },
-    {
-        id: 1,
-        title: 'Rented',
-        description: 'Rented is an OSS project for developers who wants to implement a booking service in their applications.Rented targets the automobile industry.It has everything they need,from authentication to authorization using JWT and a mailing service.',
-        image: '/images/project1.jpg',
-        url: 'https://example.com/project1',
-        link: 'rented.com'
-    },
-    {
-        id: 1,
-        title: 'HuB',
-        description: 'HuB is an OSS project built for my college.It allows students to upload their projects for easy access.With HuB,it includes uploading both mini project and final year project.One can give access to people who can edit their project documentation on the site',
-        image: '/images/project1.jpg',
-        url: 'https://example.com/project1',
-        link: 'hub.com'
-    },
-    {
-        id: 1,
-        title: 'DigiCampX',
-        description: 'A mobile application for KNUST students and visitor.It provides information to new students and visitors and visitors who cant find their around campus.It includes the locations of halls,colleges and lives happening on campus via a map.With DigiCampX,you can move around with ease.',
-        image: '/images/project1.jpg',
-        url: 'https://example.com/project1',
-        link: 'source code'
-    },
-    
-
+export const projects = [
+  {
+    id: 1,
+    title: 'DTQ',
+    description: 'A distributed task queue for reliable email delivery at scale, built in Go. Concurrent worker pools pull jobs asynchronously from a shared queue, with exponential backoff retry logic ensuring no message is silently dropped. Built for high throughput — DTQ handles the hard parts of async job processing: job persistence, failure recovery, and controlled concurrency.',
+    url: 'https://github.com/Silas003/dtq',
+    link: 'View on GitHub',
+  },
+  {
+    id: 2,
+    title: 'AuthPlate',
+    description: 'A production-ready Django REST Framework boilerplate that eliminates the tedious setup every backend project starts with. Ships pre-wired with JWT access and refresh token flows, role-based authorization, a full user management layer, and a messaging queue — so you can skip the scaffolding and go straight to building what actually matters.',
+    url: 'https://github.com/kumikin/authplate',
+    link: 'View on GitHub',
+  },
+  {
+    id: 3,
+    title: 'Rented',
+    description: 'An open-source booking engine built for the automobile industry, designed to be dropped into any application without rearchitecting around it. JWT-secured endpoints handle authentication and authorization across the full booking lifecycle, while a built-in mailing service covers confirmations and notifications — all the plumbing, none of the lock-in.',
+    url: 'https://github.com/Silas003',
+    link: 'View on GitHub',
+  },
+  {
+    id: 4,
+    title: 'HuB',
+    description: 'A collaborative project repository built for college students, solving the problem of final-year work living in scattered drives and email threads. Students upload mini and final year projects with structured documentation, and grant granular edit access to collaborators — making it easy to share, review, and build on each other\'s work.',
+    url: 'https://github.com/Silas003',
+    link: 'View on GitHub',
+  },
+  {
+    id: 5,
+    title: 'DigiCampX',
+    description: 'A mobile application built for KNUST students and first-time visitors who need to find their way around a large campus without a guide. Maps halls, colleges, and live campus events in real time — giving newcomers a self-serve way to navigate so they never have to stop and ask for directions.',
+    url: 'https://github.com/Silas003',
+    link: 'View Source',
+  },
+  {
+    id: 6,
+    title: 'GridSentry',
+    description: 'An IoT home electrical control system built as an undergraduate capstone, combining real-time safety monitoring with smart automation. Current sensors trip the circuit automatically on overcurrent detection; a fire module triggers an immediate power cutoff and alarm before damage spreads. A companion mobile app gives room-level control over connected appliances, while passive occupancy sensing powers everything down the moment a room is empty — no manual intervention needed.',
+    url: 'https://github.com/Silas003',
+    link: 'View Source',
+  },
+  {
+    id: 7,
+    title: 'LectureLens',
+    description: 'A Telegram bot powered by LangChain that turns static lecture slides into active study sessions. Students upload their slides and the bot parses the content, infers where context is thin, and responds with expanded explanations, curated reference links, and practice questions — a study partner that reads the same material and knows exactly what to add. Built for students who want to go deeper than what the slide deck alone gives them.',
+    url: 'https://github.com/Silas003',
+    link: 'View on GitHub',
+  },
 ]
-
