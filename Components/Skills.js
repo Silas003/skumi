@@ -10,14 +10,9 @@ const skillGroups = [
     skills: ['Spring', 'FastAPI','Django','Gin','Angular','React','Next'],
   },
   {
-    label: 'AWS',
+    label: 'Cloud & DevOps',
     accent: 'text-orange-600 dark:text-orange-400',
-    skills: ['Lambda', 'ECS Fargate', 'API Gateway', 'DynamoDB', 'CloudFormation', 'EventBridge', 'S3',],
-  },
-  {
-    label: 'DevOps',
-    accent: 'text-sky-600 dark:text-sky-400',
-    skills: ['GitHub Actions', 'Docker', 'ECR', 'CodePipeline', 'CodeDeploy', 'AWS SAM'],
+    skills: ['ECS Fargate', 'Lambda', 'API Gateway', 'CloudFormation', 'DynamoDB', 'S3', 'GitHub Actions', 'Docker', 'AWS SAM', 'CodePipeline'],
   },
   {
     label: 'Databases',
@@ -36,7 +31,7 @@ const Skills = () => {
       <div className="space-y-4">
         {skillGroups.map((group) => (
           <div key={group.label} className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6">
-            <span className={`text-xs font-bold uppercase tracking-widest flex-shrink-0 sm:w-20 sm:pt-1.5 ${group.accent}`}>
+            <span className={`text-xs font-bold uppercase tracking-widest flex-shrink-0 sm:w-28 sm:pt-1.5 ${group.accent}`}>
               {group.label}
             </span>
             <div className="flex flex-wrap gap-2">
