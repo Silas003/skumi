@@ -7,7 +7,7 @@ const skillGroups = [
   {
     label: 'Frameworks',
     accent: 'text-green-600 dark:text-green-400',
-    skills: ['Spring MVC', 'FastAPI','Django','Gin','Angular','React','Next'],
+    skills: ['Spring', 'FastAPI','Django','Gin','Angular','React','Next'],
   },
   {
     label: 'AWS',
