@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Index from "@/Components/Index"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://skumi.vercel.app'
-const title = 'Silas Kumi | Backend & Cloud Engineer'
-const description = 'Backend & Cloud Engineer building distributed systems and cloud infrastructure with Java/Spring, Python/FastAPI, and AWS.'
+const title = 'Silas Kumi | Full-Stack Engineer'
+const description = 'Full-stack engineer building scalable systems and cloud infrastructure with Java/Spring, Python/FastAPI, and AWS.'
 
 export default function Home() {
   return (
@@ -40,7 +40,7 @@ export default function Home() {
               '@context': 'https://schema.org',
               '@type': 'Person',
               name: 'Silas Kumi',
-              jobTitle: 'Backend & Cloud Engineer',
+              jobTitle: 'Full-Stack Engineer',
               url: siteUrl,
               sameAs: [
                 'https://github.com/Silas003',

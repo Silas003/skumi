@@ -1,4 +1,3 @@
-import { GameController } from '@phosphor-icons/react'
 import Nav from './Nav'
 import Skills from './Skills'
 import Certifications from './Certifications'
@@ -21,7 +20,7 @@ const Index = () => {
 
       <main id="main-content" className="flex-1 flex flex-col">
         {/* HERO */}
-        <header className="relative flex flex-col items-center justify-center min-h-[88vh] text-center overflow-hidden px-4">
+        <header className="relative flex flex-col items-center justify-center text-center overflow-hidden px-4 pt-20 pb-16 md:pt-24 md:pb-20">
           {/* Faded technical grid + ambient glow, tied to the brand accent only */}
           <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
             <div className="absolute inset-0 bg-dot-grid text-neutral-300/60 dark:text-neutral-800/50" />
@@ -30,7 +29,7 @@ const Index = () => {
           </div>
 
           <p className="animate-fade-in mb-8 font-mono text-xs text-green-600 tracking-[0.15em] dark:text-green-400">
-            [ backend &amp; cloud engineer ]
+            [ full-stack engineer ]
           </p>
 
           <h1
@@ -56,16 +55,10 @@ const Index = () => {
           <Reveal>
             <SectionHeading>About</SectionHeading>
             <p className="text-neutral-600 text-base md:text-lg leading-relaxed max-w-2xl dark:text-neutral-400">
-              I build the systems that run quietly underneath everything else: the queue that makes sure a
-              job never gets lost, the pipeline that ships code without drama, the infrastructure that
-              scales without anyone noticing it&apos;s there. Most of what I build starts small, a side
-              project born from a real problem, before it earns the discipline to run in production. Off
-              the keyboard, I&apos;m usually deep in{' '}
-              <span className="inline-flex items-center gap-1 align-middle">
-                <GameController size={13} weight="fill" className="text-red-500 dark:text-red-400" />
-                <span className="text-red-600 font-semibold dark:text-red-400">GTA V Online</span>
-              </span>
-              {' '}or building something in 3D, just for the joy of making things.
+              Full-stack engineer who&apos;s drawn to the bigger picture, architecture, scalability, how
+              all the pieces fit together, as much as the code itself. I like systems that are built to
+              last, not just to work today. Outside of engineering, I&apos;m usually deep into a game,
+              shaping something in 3D, or talking tech and intentionality with my church&apos;s piano.
             </p>
           </Reveal>
         </section>
