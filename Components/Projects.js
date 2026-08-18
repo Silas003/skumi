@@ -1,59 +1,49 @@
 import Link from 'next/link'
+import { ArrowUpRight } from '@phosphor-icons/react'
 import { projects } from './utils'
-
-const cardGradients = [
-  'from-green-100 to-emerald-50 dark:from-green-900/50 dark:to-emerald-950/30',
-  'from-blue-100 to-sky-50 dark:from-blue-900/50 dark:to-sky-950/30',
-  'from-purple-100 to-violet-50 dark:from-purple-900/50 dark:to-violet-950/30',
-  'from-orange-100 to-amber-50 dark:from-orange-900/50 dark:to-amber-950/30',
-  'from-rose-100 to-pink-50 dark:from-rose-900/50 dark:to-pink-950/30',
-]
-
-const ArrowUpRight = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
-    <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
-  </svg>
-)
+import Reveal from './Reveal'
+import SectionHeading from './SectionHeading'
 
 const Projects = () => {
   return (
-    <section id="projects" className="mb-14 md:mb-20">
-      <div className="flex items-center mb-8">
-        <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-3 animate-pulse dark:bg-green-400" />
-        <h2 className="text-xl md:text-2xl font-extrabold text-neutral-900 tracking-tight dark:text-white">Projects</h2>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <section id="projects" className="mb-16 md:mb-24">
+      <Reveal>
+        <SectionHeading>Projects</SectionHeading>
+      </Reveal>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-10">
         {projects.map((project, index) => (
-          <div
-            key={project.id}
-            className="group bg-white border border-neutral-200 rounded-2xl overflow-hidden flex flex-col hover:border-neutral-300 hover:shadow-md transition-all duration-300 dark:bg-neutral-900/60 dark:border-neutral-800/60 dark:hover:border-neutral-700 dark:hover:shadow-none dark:hover:bg-neutral-900/80"
-          >
-            {/* Card header */}
-            <div
-              className={`h-24 bg-gradient-to-br ${cardGradients[index % cardGradients.length]} border-b border-neutral-200/60 dark:border-neutral-800/40 flex items-end p-4`}
+          <Reveal key={project.id} delay={(index % 4) * 60}>
+            <Link
+              href={project.url}
+              target="_blank"
+              className="group block pt-6 pb-7 border-t border-neutral-200 dark:border-neutral-800"
             >
-              <span className="text-4xl font-black text-black/10 tracking-tighter select-none leading-none dark:text-white/10">
-                {project.title.slice(0, 2).toUpperCase()}
-              </span>
-            </div>
-            {/* Card body */}
-            <div className="p-5 flex flex-col flex-1">
-              <h3 className="text-base font-bold text-neutral-900 mb-2 group-hover:text-green-600 transition-colors duration-200 dark:text-white dark:group-hover:text-green-400">
-                {project.title}
-              </h3>
-              <p className="text-neutral-500 text-sm leading-relaxed flex-1 mb-5 line-clamp-3 dark:text-neutral-500">
+              <div className="flex items-baseline gap-3 mb-2.5">
+                <span className="font-mono text-xs text-neutral-400 dark:text-neutral-600">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <h3 className="text-lg font-bold text-neutral-900 group-hover:text-green-600 transition-colors duration-200 dark:text-white dark:group-hover:text-green-400">
+                  {project.title}
+                </h3>
+                <ArrowUpRight
+                  size={14}
+                  weight="bold"
+                  className="text-neutral-300 transition-all duration-200 group-hover:text-green-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:text-neutral-700 dark:group-hover:text-green-400"
+                />
+              </div>
+              <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2 mb-3 pl-[27px] dark:text-neutral-500">
                 {project.description}
               </p>
-              <Link
-                href={project.url}
-                target="_blank"
-                className="inline-flex items-center gap-1.5 text-green-600 hover:text-green-700 text-sm font-semibold transition-colors duration-200 mt-auto dark:text-green-400 dark:hover:text-green-300"
-              >
-                {project.link}
-                <ArrowUpRight />
-              </Link>
-            </div>
-          </div>
+              <div className="flex flex-wrap gap-3 pl-[27px]">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="font-mono text-xs text-neutral-400 dark:text-neutral-600">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </Link>
+          </Reveal>
         ))}
       </div>
     </section>
