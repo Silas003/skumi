@@ -61,7 +61,7 @@ const Nav = () => {
           {/* Resume stays a plain link, matching the weight of the section
               links; Email me is the one filled action in the bar. */}
           <a
-            href="https://drive.google.com/file/d/1-QoREEMwpg4-XBfZSb8GhkGmeRep4GYi/view?usp=sharing"
+            href="https://drive.google.com/file/d/1o9CuGMG0XfIiyJwYZJB3S5OG0D89Lh68/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1.5 text-neutral-600 hover:text-neutral-900 text-sm font-medium px-3 py-1.5 rounded-lg hover:bg-neutral-100 transition-all duration-200 dark:text-neutral-400 dark:hover:text-white dark:hover:bg-white/5"
@@ -132,7 +132,7 @@ const Nav = () => {
 
               <div className="flex items-center gap-2 mt-3 pt-3 border-t border-neutral-200/60 dark:border-neutral-800/60">
                 <a
-                  href="https://drive.google.com/file/d/1-QoREEMwpg4-XBfZSb8GhkGmeRep4GYi/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1o9CuGMG0XfIiyJwYZJB3S5OG0D89Lh68/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   onClick={closeMenu}
