@@ -38,7 +38,7 @@ const Skills = () => {
       <div className="space-y-5">
         {skillGroups.map((group, i) => (
           <Reveal key={group.label} delay={i * 60} className="flex flex-col sm:flex-row sm:items-start gap-2.5 sm:gap-6">
-            <span className={`inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest flex-shrink-0 sm:w-32 sm:pt-1.5 ${group.accent}`}>
+            <span className={`inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest shrink-0 sm:w-32 sm:pt-1.5 ${group.accent}`}>
               <group.icon size={14} weight="bold" />
               {group.label}
             </span>
