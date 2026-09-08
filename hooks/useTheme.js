@@ -4,8 +4,10 @@ export function useTheme() {
   const [theme, setTheme] = useState(null)
 
   useEffect(() => {
+    // Reads localStorage/matchMedia post-mount to avoid an SSR/client hydration mismatch.
     const stored = localStorage.getItem('theme')
     if (stored) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setTheme(stored)
     } else {
       setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
