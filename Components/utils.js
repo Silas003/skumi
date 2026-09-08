@@ -4,7 +4,15 @@ export const projects = [
     title: 'DTQ',
     description: 'A distributed task queue for reliable email delivery at scale, built in Go. Concurrent worker pools pull jobs asynchronously from a shared queue, with exponential backoff retry logic ensuring no message is silently dropped. Built for high throughput, DTQ handles the hard parts of async job processing: job persistence, failure recovery, and controlled concurrency.',
     tags: ['Go', 'Distributed Systems'],
-    url: 'https://github.com/Silas003/dtq',
+    url: 'https://github.com/Silas003',
+    link: 'View on GitHub',
+  },
+  {
+    id: 7,
+    title: 'LectureLens',
+    description: 'A Telegram bot powered by LangChain that turns static lecture slides into active study sessions. Students upload their slides and the bot parses the content, infers where context is thin, and responds with expanded explanations, curated reference links, and practice questions: a study partner that reads the same material and knows exactly what to add. Built for students who want to go deeper than what the slide deck alone gives them.',
+    tags: ['LangChain', 'Telegram Bot'],
+    url: 'https://github.com/Silas003',
     link: 'View on GitHub',
   },
   {
@@ -12,7 +20,7 @@ export const projects = [
     title: 'AuthPlate',
     description: 'A production-ready Django REST Framework boilerplate that eliminates the tedious setup every backend project starts with. Ships pre-wired with JWT access and refresh token flows, role-based authorization, a full user management layer, and a messaging queue, so you can skip the scaffolding and go straight to building what actually matters.',
     tags: ['Django REST Framework', 'JWT'],
-    url: 'https://github.com/kumikin/authplate',
+    url: 'https://github.com/Silas003',
     link: 'View on GitHub',
   },
   {
@@ -47,12 +55,5 @@ export const projects = [
     url: 'https://github.com/Silas003',
     link: 'View Source',
   },
-  {
-    id: 7,
-    title: 'LectureLens',
-    description: 'A Telegram bot powered by LangChain that turns static lecture slides into active study sessions. Students upload their slides and the bot parses the content, infers where context is thin, and responds with expanded explanations, curated reference links, and practice questions: a study partner that reads the same material and knows exactly what to add. Built for students who want to go deeper than what the slide deck alone gives them.',
-    tags: ['LangChain', 'Telegram Bot'],
-    url: 'https://github.com/Silas003',
-    link: 'View on GitHub',
-  },
+
 ]
