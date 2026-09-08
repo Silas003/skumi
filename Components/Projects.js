@@ -32,7 +32,7 @@ const Projects = () => {
                   className="text-neutral-300 transition-all duration-200 group-hover:text-green-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:text-neutral-700 dark:group-hover:text-green-400"
                 />
               </div>
-              <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2 mb-3 pl-[27px] dark:text-neutral-500">
+              <p className="text-sm text-neutral-500 leading-relaxed mb-3 pl-[27px] dark:text-neutral-500">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-3 pl-[27px]">
